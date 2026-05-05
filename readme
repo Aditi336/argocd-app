@@ -1,0 +1,2 @@
+1. To create argo cd application
+    # ubectl apply -f application.yaml
