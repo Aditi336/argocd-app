@@ -5,4 +5,14 @@ metadata:
   namespace: argocd
 spec: 
   source:
-    repoURL: 
+    repoURL: https://github.com/Aditi336/argocd-app.git
+    targetRevision: HEAD 
+    path: .
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true 
